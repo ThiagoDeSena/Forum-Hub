@@ -23,19 +23,23 @@ A API FórumHub permite as seguintes operações:
 - DELETE: Exclução Lógica de um tópico pelo id.
 - POST: Criação de usuário autorizado a acessar a API.
 
-## Funcionalidades
+## Tecnologias Utilizadas
 
-:heavy_check_mark: `Consulta por categoria:` Permite selecionar entre carros, motos ou caminhões. 
+:heavy_check_mark: `Java:` Linguagem de programação usada para desenvolver a API. 
 
-:heavy_check_mark: `Consulta por marca:`  Permite selecionar a marca do veículo desejado, como Ford, Volkswagen, Fiat, etc.
+:heavy_check_mark: `Spring Boot:` Framework utilizado para construir a API REST..
 
-:heavy_check_mark: `Consulta por modelo:`  Permite selecionar o modelo específico do veículo, como Palio, Gol, Fusca, etc.
+:heavy_check_mark: `Spring Security:` Módulo de segurança do Spring utilizado para autenticação e controle de acesso..
 
-:heavy_check_mark: `Consulta por ano:` Permite selecionar o ano de fabricação do veículo.
+:heavy_check_mark: `JWT (JSON Web Token):` Utilizado para autenticação stateless e segura..
 
-:heavy_check_mark: `Exibição do valor FIPE:` Exibe o valor do veículo de acordo com a categoria, marca, modelo e ano selecionados.
+:heavy_check_mark: `auth0:` Serviço de gestão de identidade e autenticação usada para integrar e gerenciar as credenciais dos usuários.
 
-## Como usar
+:heavy_check_mark: `Spring Doc:` Utilizado para geração automática de documentação da API.
+
+:heavy_check_mark: `MySQL:` Banco de dados relacional para armazenamento dos dados.
+
+## Diagrama do Banco de Dados
 
 https://github.com/ThiagoDeSena/Tabela-Fipe/assets/110785400/545df798-0790-4d08-9d8b-8c738afe4a33
 
