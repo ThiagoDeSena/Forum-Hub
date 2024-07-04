@@ -23,6 +23,12 @@ A API FórumHub permite as seguintes operações:
 - DELETE: Exclução Lógica de um tópico pelo id.
 - POST: Criação de usuário autorizado a acessar a API.
 
+## Vídeo de funcionamento
+
+
+https://github.com/ThiagoDeSena/Forum-Hub/assets/110785400/19b4f4ee-300e-484f-879e-25a59e781da6
+
+
 ## Tecnologias Utilizadas
 
 :heavy_check_mark: `Java:` Linguagem de programação usada para desenvolver a API. 
