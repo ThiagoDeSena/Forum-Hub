@@ -41,15 +41,15 @@ A API FórumHub permite as seguintes operações:
 
 ## Diagrama do Banco de Dados
 
-https://github.com/ThiagoDeSena/Tabela-Fipe/assets/110785400/545df798-0790-4d08-9d8b-8c738afe4a33
+![Tópico](https://github.com/ThiagoDeSena/Forum-Hub/assets/110785400/70872da6-ea07-4446-80ce-8ef87854bf08)
 
+## Como Configurar e Executar
 
-## Benefícios
+<h3>Configurar Banco de Dados MySQL</h3>
 
-- Praticidade: Consulta rápida e fácil dos valores FIPE.
-- Precisão: Informações atualizadas e confiáveis da Tabela FIPE.
-- Organização: Permite aos colecionadores gerenciar sua coleção de forma organizada, com acesso aos valores dos seus veículos.
-- Decisão informada: Auxilia na tomada de decisões sobre compra, venda ou avaliação de carros, motos e caminhões.
+ 1.Crie um banco de dados no MySQL:
+
+  <CREATE DATABASE forumhub;>
 
  ## Observações
 
