@@ -1,4 +1,4 @@
-package br.alura.ForumHub.domain;
+package br.alura.ForumHub.domain.infra.exception;
 
 public class ValidacaoException extends RuntimeException {
     public ValidacaoException(String mensagem) {
