@@ -1,8 +1,8 @@
 # FórumHub API
-![Instagram post carro moderno azul e preto](https://github.com/ThiagoDeSena/Tabela-Fipe/assets/110785400/161dc760-1f5b-4d6a-8c8e-569e86b9183b)
+![Fórum Hub](https://github.com/ThiagoDeSena/Forum-Hub/assets/110785400/7030cf6f-0f52-4be0-90cc-391384fdf964)
 ![Badge Concluído](http://img.shields.io/static/v1?label=STATUS&message=CONCLUÍDO&color=GREEN&style=for-the-badge)
 ![Badge Linguagem](http://img.shields.io/static/v1?label=LINGUAGEM&message=JAVA&color=yellow&style=for-the-badge)
-![Badge Linguagem](http://img.shields.io/static/v1?label=API&message=FIPE+API+HTTP+REST&color=blue&style=for-the-badge)
+![Badge Linguagem](http://img.shields.io/static/v1?label=API&message=Fórum_hub&color=blue&style=for-the-badge)
 
 ## Descrição do projeto 
 
@@ -12,16 +12,16 @@ atualizar e deletar tópicos de discussão, perfis, respostas, cursos e usuário
 Este projeto é parte do desafio Challenge Back End.
 </p>
 
-## Objetivos do projeto
+## Funcionalidades
 
-- O objetivo do projeto é ter um fluxo similar ao que é feito no site, porém com algumas melhorias.
-- Criaremos um projeto Spring com linha de comando, utilizando a classe Scanner para fazer interações com o usuário via terminal.
-- Solicitaremos que o usuário digite o tipo de veículo desejado (carro, caminhão ou moto).
-- Feito isso, listaremos todas as marcas daquele tipo de veículo, solicitando que o usuário escolha uma marca pelo código.
-- Após essa escolha, listaremos todos os modelos de veículos daquela marca.
-- Solicitaremos que o usuário digite um trecho do modelo que ele quer visualizar, por exemplo PALIO.
-- Listaremos apenas os modelos que tiverem a palavra PALIO no nome.
-- Usuário escolherá um modelo específico pelo código e, diferente do site, já listaremos as avaliações para TODOS os anos disponíveis daquele modelo, retornando uma lista de valores dos anos do modelo de veículo escolhido.
+A API FórumHub permite as seguintes operações:
+
+- POST: Criação de um Tópico.
+- GET: Listagem dos Tópicos criados.
+- GET: Detalhamento de um Tópico pelo id.
+- PUT: Atualização de um tópico.
+- DELETE: Exclução Lógica de um tópico pelo id.
+- POST: Criação de usuário autorizado a acessar a API.
 
 ## Funcionalidades
 
