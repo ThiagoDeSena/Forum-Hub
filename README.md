@@ -83,17 +83,157 @@ api.security.token.secret=${JWT_SECRET:12345678}
 - Request Body:
   ```
   {
-    "titulo":"Dúvida em Python",
-    "mensagem":"estou com dúvidas em Python",
+    "titulo":"Dúvida em Cloud",
+    "mensagem":"estou com dúvidas em Cloud",
     "autor":"Eduardo",
-    "curso":"JavaScript"
+    "curso":"Google Cloud"
   }
   ```
 - Response:
   ```
-  
+  {
+    "id": 5,
+    "titulo": "Dúvida em Cloud",
+    "data": "2024-07-04T17:03:38.2465849",
+    "mensagem": "estou com dúvidas em Cloud",
+    "autor": "Eduardo",
+    "curso": "Google Cloud"
+  }
   ```
+![post da API](https://github.com/ThiagoDeSena/Forum-Hub/assets/110785400/e5687ca7-0dec-45f9-8658-ec3bb8a4e0b8)
 
+
+<h3>Mostrar todos os tópicos criados</h3>
+
+- Endpoint: ```GET /topicos```
+- Descrição: Retorna todos os tópicos..
+- Response:
+  ```
+  {
+    "content": [
+        {
+            "id": 1,
+            "titulo": "Achei o erro",
+            "mensagem": "Resolvir o problema",
+            "data": "2024-07-01T10:38:46.686878",
+            "status": true,
+            "autor": "Mônica",
+            "curso": "Css"
+        },
+        {
+            "id": 2,
+            "titulo": "Dúvida em Java",
+            "mensagem": "estou com dúvidas em Java",
+            "data": "2024-07-02T16:20:04.63364",
+            "status": true,
+            "autor": "Mônica",
+            "curso": "Java"
+        },
+        {
+            "id": 3,
+            "titulo": "Dúvida solucionada",
+            "mensagem": "Entendi agora",
+            "data": "2024-07-02T16:20:31.439853",
+            "status": true,
+            "autor": "Eduardo",
+            "curso": "JavaScript"
+        },
+        {
+            "id": 4,
+            "titulo": "Dúvida em Python",
+            "mensagem": "estou com dúvidas em Python",
+            "data": "2024-07-04T16:59:10.720103",
+            "status": true,
+            "autor": "Eduardo",
+            "curso": "JavaScript"
+        },
+        {
+            "id": 5,
+            "titulo": "Dúvida em Cloud",
+            "mensagem": "estou com dúvidas em Cloud",
+            "data": "2024-07-04T17:03:38.246585",
+            "status": true,
+            "autor": "Eduardo",
+            "curso": "Google Cloud"
+        }
+    ],
+    "pageable": {
+        "pageNumber": 0,
+        "pageSize": 10,
+        "sort": {
+            "empty": false,
+            "sorted": true,
+            "unsorted": false
+        },
+        "offset": 0,
+        "unpaged": false,
+        "paged": true
+    },
+    "totalPages": 1,
+    "totalElements": 5,
+    "last": true,
+    "size": 10,
+    "number": 0,
+    "sort": {
+        "empty": false,
+        "sorted": true,
+        "unsorted": false
+    },
+    "numberOfElements": 5,
+    "first": true,
+    "empty": false
+  }
+  ```
+![GET](https://github.com/ThiagoDeSena/Forum-Hub/assets/110785400/33bc4417-d232-4683-9979-786e11b0d063)
+
+<h3>Mostrar um tópico específico</h3>
+
+- Endpoint: ```GET /topicos/{id}```
+- Descrição: Retorna um tópico pelo ID.
+- Response:
+  ```
+  {
+    "id": 1,
+    "titulo": "Achei o erro",
+    "data": "2024-07-01T10:38:46.686878",
+    "mensagem": "Resolvir o problema",
+    "autor": "Mônica",
+    "curso": "Css"
+  }
+  ```
+![get{id}](https://github.com/ThiagoDeSena/Forum-Hub/assets/110785400/1e2b145d-29c5-4b60-82a1-93668052f295)
+
+<h3>Atualizar um Tópico</h3>
+
+- Endpoint: ```PUT /topicos/{id}```
+- Descrição: Atualiza um tópico pelo ID.
+- Request Body:
+  ```
+  {
+    "titulo":"Dúvida aberta ainda",
+    "mensagem":"Ainda não entendi"
+  }
+  ```
+- Response:
+  ```
+  {
+    "id": 4,
+    "titulo": "Dúvida aberta ainda",
+    "data": "2024-07-04T16:59:10.720103",
+    "mensagem": "Ainda não entendi",
+    "autor": "Eduardo",
+    "curso": "JavaScript"
+  }
+  ```
+![put](https://github.com/ThiagoDeSena/Forum-Hub/assets/110785400/40c55fc2-63e8-4f68-b087-03cc2d196710)
+
+<h3>Deletar um Tópico</h3>
+
+- Endpoint: ```DELETE /topicos/{id}```
+- Descrição: Deleta logicamente um tópico pelo ID.
+
+
+![Delete](https://github.com/ThiagoDeSena/Forum-Hub/assets/110785400/89020e1d-b4ed-4824-b5cf-fb42aa305786)
 
 
 ## Desenvolvedores
