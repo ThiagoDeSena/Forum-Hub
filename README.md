@@ -49,7 +49,29 @@ A API FórumHub permite as seguintes operações:
 
  1.Crie um banco de dados no MySQL:
 
-  <CREATE DATABASE forumhub;>
+  ```CREATE DATABASE forumhub;```
+
+ 2.Configure as credenciais do banco de dados no arquivo ```src/main/resources/application.properties:```
+
+ ```
+spring.application.name=ForumHub
+spring.datasource.url=jdbc:mysql://localhost/forum_hub
+spring.datasource.username=root
+spring.datasource.password=12345
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+spring.jpa.hibernate.ddl-auto=update
+
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+api.security.token.secret=${JWT_SECRET:12345678}
+```
+  3.Acesse a aplicação em ```http://localhost:8080```.
+
+  4.A documentação da API gerada pelo Spring Doc pode ser acessada em ```http://localhost:8080/swagger-ui.html```.
+
+  
 
  ## Observações
 
