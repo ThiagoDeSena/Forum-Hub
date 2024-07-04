@@ -236,6 +236,10 @@ api.security.token.secret=${JWT_SECRET:12345678}
 ![Delete](https://github.com/ThiagoDeSena/Forum-Hub/assets/110785400/89020e1d-b4ed-4824-b5cf-fb42aa305786)
 
 
+## Documentação da API
+
+A documentação da API gerada pelo Spring Doc pode ser acessada em ```http://localhost:8080/swagger-ui.html```.
+
 ## Desenvolvedores
 
 [<img src="https://avatars.githubusercontent.com/u/110785400?v=4" width=115><br><sub>Thiago De Sena</sub>](https://www.linkedin.com/in/thiago-de-sena-ab5b09179/)
